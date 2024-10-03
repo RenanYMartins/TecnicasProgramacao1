@@ -4,16 +4,16 @@
     {
         //Program.DecimalParaBinario();
 
-        //Program.Menu();
+        Program.Menu();
 
         // Exercicio 01
-        Program.Senha();
+        //Program.Senha();
 
         // Exercicio 02
-        Program.NumerosInteiros();
+        //Program.NumerosInteiros();
 
         // Exercicio 03
-        Program.VendaCarros();
+        //Program.VendaCarros();
     }
 
     public static void DecimalParaBinario()
@@ -46,7 +46,7 @@
     {
         int opcao = 0;
 
-        do
+        while (opcao != 5)
         {
             Console.WriteLine("\n_____Menu_____");
             Console.WriteLine("[01] Somar dois números");
@@ -58,7 +58,7 @@
             opcao = Convert.ToInt32(Console.ReadLine());
 
             Calcular(opcao);
-        } while (opcao != 5);
+        }
 
         Console.WriteLine("\nSaindo...");
     }
@@ -67,10 +67,13 @@
     {
         int[] numeros = new int[2];
 
-        for (int i = 0; i < numeros.Length; i++)
+        if (opcao != 5)
         {
-            Console.Write($"Entre com o {i + 1}º número");
-            numeros[i] = Convert.ToInt32(Console.ReadLine());
+            for (int i = 0; i < numeros.Length; i++)
+            {
+                Console.Write($"Entre com o {i + 1}º número");
+                numeros[i] = Convert.ToInt32(Console.ReadLine());
+            }
         }
 
         switch (opcao)
@@ -86,6 +89,8 @@
                 break;
             case 4:
                 Console.Write($"{numeros[0]} / {numeros[1]} = {numeros[0] / numeros[1]}");
+                break;
+            case 5:
                 break;
             default:
                 Console.Write("Opção inválida");
@@ -149,7 +154,7 @@
         int quantidadeCarrosAntigos = 0;
         String opcao = "S";
 
-        while(opcao != "N")
+        while (opcao != "N")
         {
             Console.Write("Ano do carro: ");
             anoCarro = Convert.ToInt32(Console.ReadLine());
