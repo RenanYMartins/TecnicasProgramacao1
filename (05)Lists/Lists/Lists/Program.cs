@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel;
 using System.Runtime.Serialization;
+using System.Threading.Channels;
 
 internal class Program
 {
@@ -12,7 +13,10 @@ internal class Program
         //Program.Disciplinas();
 
         // Exercicio 01 - calculo inteiros
-        Program.ListaParesImpares();
+        //Program.ListaParesImpares();
+
+        //Exercicio 02 - remover numero
+        Program.RemoverLista();
     }
 
     private static void ListaNumeros()
@@ -102,4 +106,33 @@ internal class Program
         if (intList.Count > 0)
             Console.WriteLine($"Soma dos Pares: {somaPares} | Soma de Ímpares: {somaImpares}");   
     }
+
+    private static void RemoverLista()
+    {
+        int num = 0;
+        int numRemovido = 0;
+        List<int> intList = new List<int>();
+
+        do
+        {
+            Console.Write("Informe um número(Pressione 0 para sair): ");
+            num = Convert.ToInt32(Console.ReadLine());
+
+            if (num != 0)
+                intList.Add(num);
+        } while (num != 0);
+
+        if (intList.Count > 0)
+        {
+            Console.WriteLine("Digite o número a ser excluído: ");
+            num = Convert.ToInt32(Console.ReadLine());
+
+            intList.Remove(num);
+        }
+
+        foreach(int x in intList)
+            Console.WriteLine(x);
+
+    }
+
 }
