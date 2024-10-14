@@ -1,28 +1,28 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\aluno\\Desktop\\C#\\TecnicasProgramacao1\\(05)Lists\\Lists\\Lists\\Lists.csproj": {}
+    "D:\\ADS\\Técnicas de Programação I\\(05)Lists\\Lists\\Lists\\Lists.csproj": {}
   },
   "projects": {
-    "C:\\Users\\aluno\\Desktop\\C#\\TecnicasProgramacao1\\(05)Lists\\Lists\\Lists\\Lists.csproj": {
+    "D:\\ADS\\Técnicas de Programação I\\(05)Lists\\Lists\\Lists\\Lists.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\aluno\\Desktop\\C#\\TecnicasProgramacao1\\(05)Lists\\Lists\\Lists\\Lists.csproj",
+        "projectUniqueName": "D:\\ADS\\Técnicas de Programação I\\(05)Lists\\Lists\\Lists\\Lists.csproj",
         "projectName": "Lists",
-        "projectPath": "C:\\Users\\aluno\\Desktop\\C#\\TecnicasProgramacao1\\(05)Lists\\Lists\\Lists\\Lists.csproj",
-        "packagesPath": "C:\\Users\\aluno\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\aluno\\Desktop\\C#\\TecnicasProgramacao1\\(05)Lists\\Lists\\Lists\\obj\\",
+        "projectPath": "D:\\ADS\\Técnicas de Programação I\\(05)Lists\\Lists\\Lists\\Lists.csproj",
+        "packagesPath": "C:\\Users\\renan\\.nuget\\packages\\",
+        "outputPath": "D:\\ADS\\Técnicas de Programação I\\(05)Lists\\Lists\\Lists\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\aluno\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\renan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net8.0"
+          "net7.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -30,8 +30,8 @@
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net8.0": {
-            "targetAlias": "net8.0",
+          "net7.0": {
+            "targetAlias": "net7.0",
             "projectReferences": {}
           }
         },
@@ -39,16 +39,11 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
-        "net8.0": {
-          "targetAlias": "net8.0",
+        "net7.0": {
+          "targetAlias": "net7.0",
           "imports": [
             "net461",
             "net462",
@@ -65,7 +60,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     }

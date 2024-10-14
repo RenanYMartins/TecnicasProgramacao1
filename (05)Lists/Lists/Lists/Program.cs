@@ -1,22 +1,25 @@
-﻿using System.ComponentModel;
-using System.Runtime.Serialization;
-using System.Threading.Channels;
-
+﻿
 internal class Program
 {
     private static void Main(string[] args)
     {
         // Exemplo lista de numeros
-        //Program.ListaNumeros();
+        // Program.ListaNumeros();
 
         // Exemplo disciplinas
-        //Program.Disciplinas();
+        // Program.Disciplinas();
 
         // Exercicio 01 - calculo inteiros
-        //Program.ListaParesImpares();
+        Program.ListaParesImpares();
 
         //Exercicio 02 - remover numero
         Program.RemoverLista();
+
+        // Exercicio 03 - maior e menor numero
+        Program.MaiorMenorNumero();
+
+        // Exercicio 04 - ordenar nomes
+        Program.OrdenarNomes();
     }
 
     private static void ListaNumeros()
@@ -104,7 +107,7 @@ internal class Program
         Console.WriteLine($"Quantidade de Pares: {qtdPares} | Quantidade de Ímpares: {qtdImpares}");
 
         if (intList.Count > 0)
-            Console.WriteLine($"Soma dos Pares: {somaPares} | Soma de Ímpares: {somaImpares}");   
+            Console.WriteLine($"Soma dos Pares: {somaPares} | Soma de Ímpares: {somaImpares}");
     }
 
     private static void RemoverLista()
@@ -130,9 +133,60 @@ internal class Program
             intList.Remove(num);
         }
 
-        foreach(int x in intList)
+        foreach (int x in intList)
             Console.WriteLine(x);
 
+    }
+
+    private static void MaiorMenorNumero()
+    {
+        int num = 0;
+        List<int> intList = new List<int>();
+
+        do
+        {
+            Console.Write("Informe um número inteiro(Pressione 0 para sair): ");
+            num = Convert.ToInt32(Console.ReadLine());
+
+            if (num != 0)
+                intList.Add(num);
+        } while (num != 0);
+
+        if (intList.Count > 0)
+        {
+            intList.Sort();
+
+            Console.WriteLine($"\nMaior número: {intList[0]}");
+            Console.WriteLine($"Maior número: {intList[intList.Count - 1]}");
+        }
+        else{
+            Console.Write("\nNão há nenhum número na lista.");
+        }
+    }
+
+    private static void OrdenarNomes(){
+        List<string> nomesList = new List<string>();
+        string nome = "";
+
+        do
+        {
+            Console.Write("Informe um nome(Escreva FIM para sair): ");
+            nome = Convert.ToString(Console.ReadLine()).ToUpper();
+
+            if (nome != "FIM" && nome != "")
+                nomesList.Add(nome);
+        } while (nome != "FIM");
+
+        if (nomesList.Count > 0){
+            nomesList.Sort();
+
+            Console.WriteLine("Nomes ordenados:");
+            foreach (string x in nomesList)
+                Console.WriteLine(x);
+        }
+        else{
+            Console.WriteLine("Não há nenhum nome na lista");
+        }
     }
 
 }
