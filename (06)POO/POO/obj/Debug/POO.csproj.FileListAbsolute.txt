@@ -1,0 +1,14 @@
+C:\Users\aluno\Desktop\Aula\POO\POO\bin\Debug\POO.exe.config
+C:\Users\aluno\Desktop\Aula\POO\POO\bin\Debug\POO.exe
+C:\Users\aluno\Desktop\Aula\POO\POO\bin\Debug\POO.pdb
+C:\Users\aluno\Desktop\Aula\POO\POO\obj\Debug\POO.csproj.AssemblyReference.cache
+C:\Users\aluno\Desktop\Aula\POO\POO\obj\Debug\POO.csproj.CoreCompileInputs.cache
+C:\Users\aluno\Desktop\Aula\POO\POO\obj\Debug\POO.exe
+C:\Users\aluno\Desktop\Aula\POO\POO\obj\Debug\POO.pdb
+C:\Users\aluno\Desktop\Aula\TecnicasProgramacao1\(06)POO\POO\bin\Debug\POO.exe.config
+C:\Users\aluno\Desktop\Aula\TecnicasProgramacao1\(06)POO\POO\bin\Debug\POO.exe
+C:\Users\aluno\Desktop\Aula\TecnicasProgramacao1\(06)POO\POO\bin\Debug\POO.pdb
+C:\Users\aluno\Desktop\Aula\TecnicasProgramacao1\(06)POO\POO\obj\Debug\POO.csproj.AssemblyReference.cache
+C:\Users\aluno\Desktop\Aula\TecnicasProgramacao1\(06)POO\POO\obj\Debug\POO.csproj.CoreCompileInputs.cache
+C:\Users\aluno\Desktop\Aula\TecnicasProgramacao1\(06)POO\POO\obj\Debug\POO.exe
+C:\Users\aluno\Desktop\Aula\TecnicasProgramacao1\(06)POO\POO\obj\Debug\POO.pdb
