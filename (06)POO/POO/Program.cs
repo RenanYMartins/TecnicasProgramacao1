@@ -16,9 +16,13 @@ namespace POO
             //Classes.Car newCar = new Classes.Car("Peugout", "207", 4);
             //newCar.showCar();
 
-            Classes.Book book = new Classes.Book("close");
-            book.openClose();
+            //Classes.Book book = new Classes.Book("close");
+            //book.openClose();
 
+            float[] notas = new float[4];
+            float[] pesos = new float[4];
+            Classes.Alunos notasAlunos = new Classes.Alunos(notas, pesos);
+            notasAlunos.calcularMediaPonderada();
 
         }
     }

@@ -56,5 +56,49 @@ namespace POO
                 }
             }
         }
+
+        public class Alunos
+        {
+            float[] notas = new float[4];
+            float[] pesos = new float[4];
+
+
+            public Alunos(float[] notas, float[] pesos)
+            {
+                this.notas = notas;
+                this.pesos = pesos;
+            }
+
+            public void calcularMediaPonderada()
+            {
+                float somaNotasPesos = 0;
+                float somaPesos = 0;
+
+                for (int i = 0; i < notas.Length; i++)
+                {
+                    Console.Write($"Entre com a {i + 1}ª nota: ");
+                    notas[i] = float.Parse(Console.ReadLine());
+
+                    Console.Write($"Entre com o {i + 1}º peso da nota: ");
+                    pesos[i] = float.Parse(Console.ReadLine());
+                }
+
+
+                for (int i = 0; i < notas.Length; i++)
+                {
+                    somaNotasPesos += notas[i] * pesos[i];
+                    somaPesos += pesos[i];
+                }
+
+                float mediaPonderada = somaPesos > 0 ? somaNotasPesos / somaPesos : 0;
+
+                MessageBox.Show($"A média ponderada é: {mediaPonderada}");
+            }
+        }
+
+
+
+
     }
 }
+

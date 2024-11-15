@@ -12,3 +12,10 @@ C:\Users\aluno\Desktop\Aula\TecnicasProgramacao1\(06)POO\POO\obj\Debug\POO.cspro
 C:\Users\aluno\Desktop\Aula\TecnicasProgramacao1\(06)POO\POO\obj\Debug\POO.csproj.CoreCompileInputs.cache
 C:\Users\aluno\Desktop\Aula\TecnicasProgramacao1\(06)POO\POO\obj\Debug\POO.exe
 C:\Users\aluno\Desktop\Aula\TecnicasProgramacao1\(06)POO\POO\obj\Debug\POO.pdb
+D:\ADS\Técnicas de Programação I\(06)POO\POO\obj\Debug\POO.csproj.AssemblyReference.cache
+D:\ADS\Técnicas de Programação I\(06)POO\POO\obj\Debug\POO.csproj.CoreCompileInputs.cache
+D:\ADS\Técnicas de Programação I\(06)POO\POO\obj\Debug\POO.exe
+D:\ADS\Técnicas de Programação I\(06)POO\POO\obj\Debug\POO.pdb
+D:\ADS\Técnicas de Programação I\(06)POO\POO\bin\Debug\POO.exe.config
+D:\ADS\Técnicas de Programação I\(06)POO\POO\bin\Debug\POO.exe
+D:\ADS\Técnicas de Programação I\(06)POO\POO\bin\Debug\POO.pdb
