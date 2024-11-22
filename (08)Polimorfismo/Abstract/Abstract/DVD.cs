@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace Abstract
 {
-    class Televisor : Produto
+    internal class DVD : Produto
     {
 
-        public Televisor(int codigo, string descricao, double valor) : base(codigo, descricao, valor) { }
+        public DVD(int codigo, string descricao, double valor) : base(codigo, descricao, valor) { }
 
         public override void exibirProduto()
         {

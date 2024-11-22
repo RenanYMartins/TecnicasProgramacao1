@@ -25,5 +25,24 @@ namespace Abstract
                 Console.WriteLine();
             }
         }
+
+        public void ReajustarPrecos()
+        {
+            foreach (var produto in listaCompras)
+            {
+                produto.reajustarValor();
+            }
+        }
+
+        public void ExibirTotal()
+        {
+            double total = 0;
+
+            foreach (var produto in listaCompras)
+            {
+                total += produto.valor;
+            }
+            Console.WriteLine("Total da compra: R$" + Math.Round(total, 2));
+        }
     }
 }

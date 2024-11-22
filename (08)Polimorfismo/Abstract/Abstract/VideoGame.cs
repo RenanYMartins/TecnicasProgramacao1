@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace Abstract
 {
-    class Televisor : Produto
+    internal class VideoGame : Produto
     {
 
-        public Televisor(int codigo, string descricao, double valor) : base(codigo, descricao, valor) { }
+        public VideoGame(int codigo, string descricao, double valor) : base(codigo, descricao, valor) { }
 
         public override void exibirProduto()
         {
@@ -18,7 +18,7 @@ namespace Abstract
 
         public override void reajustarValor()
         {
-            valor += valor * 0.01;
+            valor += valor * 0.015;
         }
     }
 }

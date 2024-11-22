@@ -14,26 +14,24 @@ namespace Abstract
         {
             bool exibirMenu = true;
 
-            Produto tvPlasma = new Televisor(1, "Televisor de Plasma de 40 polegadas", 1500.00);
-            Produto tvOled = new Televisor(2, "Televisor OLED de 70 polegadas", 5800);
+            List<Produto> produtos = new List<Produto>
+            {
+                new Televisor(1, "Televisor OLED de 70 polegadas", 5800),
+                new VideoGame(2, "PS5", 3700),
+                new Guitarra(3, "Guitarra Fender", 9900),
+                new DVD(4, "Aparelho DVD", 400),
+                new Notebook(5, "Notebook Positivo", 1780.00)
+            };
 
             CestaDeCompras cesta = new CestaDeCompras();
 
-            tvPlasma.reajustarValor();
-
-            cesta.AdicionarProduto(tvPlasma);
-            cesta.AdicionarProduto(tvOled);
-
             while (exibirMenu)
             {
-                exibirMenu = Menu(cesta);
+                exibirMenu = Menu(cesta, produtos);
             }
 
-            //cesta.ExibirCesta();
-
-            //Console.ReadLine();
         }
-        private static bool Menu(CestaDeCompras cesta)
+        private static bool Menu(CestaDeCompras cesta, List<Produto> protutos)
         {
             Console.Clear();
 
@@ -49,22 +47,58 @@ namespace Abstract
             switch (Console.ReadLine())
             {
                 case "1":
-                    Console.WriteLine("Opção 1 selecionada");
+                    ExibirProdutosDisponiveis(cesta, protutos);
                     return true;
                 case "2":
-                    Console.WriteLine("Opção 2 selecioanada");
+                    foreach(var produto in protutos)
+                    {
+                        produto.reajustarValor();
+                    }
+                    Console.WriteLine("Preços reajustados com sucesso");
+                    Console.ReadLine();
                     return true;
                 case "3":
                     cesta.ExibirCesta();
+                    Console.ReadLine();
                     return true;
                 case "4":
-                    Console.WriteLine("Opção 4 selecionada");
+                    cesta.ExibirTotal();
+                    Console.ReadLine();
                     return true;
                 case "5":
                     return false;
                 default:
                     return true;
             }
+        }
+
+        private static void ExibirProdutosDisponiveis(CestaDeCompras cesta, List<Produto> produtos)
+        {
+            Console.WriteLine("Escolha o produto para adicionar à cesta de compras:");
+            foreach (var produto in produtos)
+            {
+                Console.WriteLine($"Código: {produto.codigo} - Produto: {produto.descricao} - Valor: R$ {Math.Round(produto.valor, 2)}");
+            }
+            Console.Write("Digite o código do produto: ");
+
+            if (int.TryParse(Console.ReadLine(), out int codigoProduto))
+            {
+                Produto produtoSelecionado = produtos.Find(p => p.codigo == codigoProduto);
+                if (produtoSelecionado != null)
+                {
+                    cesta.AdicionarProduto(produtoSelecionado);
+                    Console.WriteLine("Produto adicionado com sucesso!");
+                }
+                else
+                {
+                    Console.WriteLine("Produto não encontrado.");
+                }
+            }
+            else
+            {
+                Console.WriteLine("Código inválido.");
+            }
+            Console.ReadLine();
         }
 
 

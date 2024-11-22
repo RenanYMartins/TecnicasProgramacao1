@@ -44,10 +44,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CestaDeCompras.cs" />
+    <Compile Include="DVD.cs" />
+    <Compile Include="Guitarra.cs" />
+    <Compile Include="Notebook.cs" />
     <Compile Include="Produto.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Televisor.cs" />
+    <Compile Include="VideoGame.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
