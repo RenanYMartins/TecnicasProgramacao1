@@ -1,0 +1,7 @@
+D:\ADS\Técnicas de Programação I\(P1) Avaliacao\Avaliacao\Avaliacao\bin\Debug\Avaliacao.exe.config
+D:\ADS\Técnicas de Programação I\(P1) Avaliacao\Avaliacao\Avaliacao\bin\Debug\Avaliacao.exe
+D:\ADS\Técnicas de Programação I\(P1) Avaliacao\Avaliacao\Avaliacao\bin\Debug\Avaliacao.pdb
+D:\ADS\Técnicas de Programação I\(P1) Avaliacao\Avaliacao\Avaliacao\obj\Debug\Avaliacao.csproj.AssemblyReference.cache
+D:\ADS\Técnicas de Programação I\(P1) Avaliacao\Avaliacao\Avaliacao\obj\Debug\Avaliacao.csproj.CoreCompileInputs.cache
+D:\ADS\Técnicas de Programação I\(P1) Avaliacao\Avaliacao\Avaliacao\obj\Debug\Avaliacao.exe
+D:\ADS\Técnicas de Programação I\(P1) Avaliacao\Avaliacao\Avaliacao\obj\Debug\Avaliacao.pdb
